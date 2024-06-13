@@ -35,8 +35,8 @@
     }
 
     .space2 {
-        padding-left: 10px;
-        padding-right: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .space {
@@ -102,7 +102,7 @@
         justify-content: center;
     }
 
-    .inscription_box{
+    .inscription_box {
         display: flex;
         width: 100%;
         flex-direction: column;
@@ -146,34 +146,54 @@
     }
 
 
-
-
-
-
-
-
-
-    .logo_container img {
-        width: 35px;
+    /* header */
+    .menu {
+        background-color: var(--menu_color);
+        width: 100%;
+        height: 60px;
+        z-index: 500;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        position: static;
     }
 
+    .nav_bar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
 
+    .logo_container {
+        display: flex;
+    }
+
+    .logo_container a {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo_container img {
+        width: 30px;
+        margin-right: 5px;
+    }
 
     .logo_container p {
         position: relative;
         padding-left: 5px;
-        font-size: 12pt;
+        font-size: 11pt;
+        color: var(--texte);
     }
 
     .logo_container p::after {
         display: flex;
         content: "";
         width: 2px;
-        height: 30px;
+        height: 63px;
         background-color: rgb(255, 255, 255);
         margin-left: 10px;
         position: absolute;
-        top: -5px;
+        top: -19px;
         left: -10px;
     }
 
@@ -226,7 +246,7 @@
     .menu_nav {
         position: fixed;
         top: 0;
-        left: -70%;
+        left: -75%;
         padding-top: 20px;
         padding-left: 20px;
         background-color: rgba(0, 0, 0, 0.95);
@@ -237,5 +257,53 @@
         flex-direction: column;
         transition: transform 0.5s;
     }
+
+    .swiper {
+        margin-top: 15px;
+        width: 95%;
+        height: 160px;
+        border-radius: 14px;
+    }
+
+    .swiper-slide {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .slide_image {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .slide_image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 14px;
+    }
+
+    .swiper-pagination {
+        height: 10px;
+        width: 10px;
+        color: white;
+        margin-top: 10px;
+    }
+
+    .swiper-pagination-bullet{
+        background: var(--button_color);
+    }
+
+    .swiper-pagination-bullet-active{
+        background: var(--header_inscription);
+    }
+
+
+
+
+
+
 
 }
