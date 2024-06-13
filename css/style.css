@@ -10,6 +10,7 @@
         --text_highlight: #00CCD0;
         --button_color: #027678;
         --rect_bg: #06141B;
+        --inscription_case: #223442;
         --border: 2px solid var(--outline);
         --border_radius: 10px;
         --font_titre: 15pt;
@@ -77,17 +78,56 @@
         margin-top: 35px;
     }
 
-    .welcom_text1 p {
+    p.welcom_text1 {
         color: var(--texte);
         font-size: 15pt;
         font-weight: 700;
     }
 
-    .welcom_text2 p {
+    p.welcom_text2,
+    p.inscription_text {
         color: var(--texte);
         font-size: 10pt;
         font-weight: 200;
     }
+
+    .informations {
+        display: flex;
+        width: 75%;
+    }
+
+    .prenom,
+    .mail,
+    .number,
+    .city,
+    .write_textarea2 {
+        background: var(--inscription_case);
+        width: 100%;
+        height: 40px;
+        min-width: 250px;
+        color: white;
+        border: none;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        height: 40px;
+        background-color: var(--button_color);
+        color: var(--texte);
+        font-size: 11pt;
+        margin-bottom: 15px;
+        border: none;
+        cursor: pointer;
+        -webkit-box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
+        box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
+        transform: translateZ(0);
+        will-change: box-shadow;
+    }
+
+
+
+
+
 
 
 
