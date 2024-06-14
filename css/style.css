@@ -258,10 +258,12 @@
         transition: transform 0.5s;
     }
 
+    /* slider */
+
     .swiper {
         margin-top: 15px;
         width: 95%;
-        height: 160px;
+        height: 190px;
         border-radius: 14px;
     }
 
@@ -281,7 +283,8 @@
     .slide_image img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: fill;
+        /* object-fit: cover; */
         border-radius: 14px;
     }
 
@@ -292,13 +295,93 @@
         margin-top: 10px;
     }
 
-    .swiper-pagination-bullet{
+    .swiper-pagination-bullet {
         background: var(--button_color);
     }
 
-    .swiper-pagination-bullet-active{
+    .swiper-pagination-bullet-active {
         background: var(--header_inscription);
     }
+
+
+    /* rows */
+    .nos_programme_title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .arrow img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .programme_title {
+        color: var(--texte);
+        font-size: 15pt;
+        font-weight: 700;
+        padding-left: 10px;
+        position: relative;
+    }
+
+    .form_bf_title::before {
+        content: "";
+        position: absolute;
+        background-color: var(--dots-color);
+        width: 5px;
+        height: 30px;
+        left: calc(0px);
+        bottom: 0px;
+    }
+
+    .all_programme {
+        display: flex;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        margin-bottom: 20px;
+        scrollbar-width: none;
+        margin-top: 10px;
+        margin-left: 10px;
+        gap: 5px;
+    }
+
+    .programme_carre {
+        display: flex;
+        align-items: center;
+    }
+
+    .programme_carre img {
+        width: 220px;
+        height: 220px;
+        border-radius: 10px;
+        object-fit: fill;
+    }
+
+    .programme_rectangle {
+        display: flex;
+        align-items: center;
+    }
+
+    .programme_rectangle img {
+        width: 300px;
+        height: 170px;
+        border-radius: 10px;
+        object-fit: fill;
+    }
+
+    .programme_portrait {
+        display: flex;
+        align-items: center;
+    }
+
+    .programme_portrait img {
+        width: 200px;
+        height: 267px;
+        border-radius: 10px;
+        object-fit: fill;
+    }
+
+
 
 
 
