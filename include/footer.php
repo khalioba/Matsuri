@@ -79,7 +79,7 @@ const swiper = new Swiper('.swiper', {
 
     // Autoplay
     autoplay: {
-        delay: 5000000, // délai entre chaque diapositive (en millisecondes)
+        delay: 2500, // délai entre chaque diapositive (en millisecondes)
         disableOnInteraction: false, // le défilement automatique ne s'arrête pas lors de l'interaction utilisateur
     },
 
