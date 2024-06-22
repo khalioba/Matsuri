@@ -44,6 +44,10 @@
         margin-right: 30px;
     }
 
+    .space_bottom {
+        margin-bottom: 15px;
+    }
+
     a {
         text-decoration: none;
     }
@@ -261,7 +265,6 @@
     /* slider */
 
     .swiper {
-        margin-top: 15px;
         width: 95%;
         height: 190px;
         border-radius: 14px;
@@ -487,6 +490,65 @@
         color: var(--texte);
     }
 
+
+    /* this month */
+    .static_slide {
+        width: 100%;
+        height: 150px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .slide_thismonth {
+        background-position: center;
+        background-size: cover;
+        background-image: url(../image/static_slide.png);
+    }
+
+    .static_slide_filter {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .static_slide_text {
+        color: white;
+        font-size: 12pt;
+    }
+
+    .description_text {
+        color: var(--texte);
+        font-size: 11pt;
+        font-weight: 400;
+        text-align: center;
+        width: 96%;
+        margin-top: 25px;
+    }
+
+    .thismonth_items {
+        display: flex;
+        margin-top: 25px;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .thismonth_visual {
+        width: 165px;
+        height: 220px;
+    }
+
+    .thismonth_visual img {
+        object-fit: fill;
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+    }
 
 
 

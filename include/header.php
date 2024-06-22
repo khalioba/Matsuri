@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <div class="menu">
+    <div class="menu space_bottom">
         <nav class="nav_bar space2">
             <div class="logo_container">
                 <a href="index.php">
