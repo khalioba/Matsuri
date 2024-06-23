@@ -12,7 +12,7 @@ include('include/inscription_header.php')
 
     <div class="informations space">
         <div class="inscription_box">
-            <form action="inscription.php" id="contactForm">
+            <form action="signup.php" id="contactForm">
                 <div class="inscription_box">
                     <input class="prenom" type="text" name="prenom" id="nom" placeholder="Entrer le code reçu par SMS"
                         required>
