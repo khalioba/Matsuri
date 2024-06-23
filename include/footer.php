@@ -52,8 +52,8 @@
     </div>
 </div>
 
-<div class="copyright_powered">
-    <div class=" copyright">
+<div class="copyright_powered space2">
+    <div class=" copyright space2">
         <p>Copyright © 2023 Matsuri</p>
     </div>
     <div class="powered">

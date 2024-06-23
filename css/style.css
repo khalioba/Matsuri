@@ -395,6 +395,8 @@
     /* footer */
     .footer {
         display: flex;
+        background-color: var(--menu_color);
+        border-top: 1px solid white;
     }
 
     .footer_items {
@@ -476,12 +478,17 @@
     }
 
     .copyright_powered {
+        background-color: var(--menu_color);
         margin: auto;
-        width: 96%;
         display: flex;
         align-items: center;
         justify-content: space-between;
         text-transform: uppercase;
+    }
+
+    .copyright, .powered{
+        width: 96%;
+        margin: auto;
     }
 
     .copyright p,
@@ -579,43 +586,51 @@
         padding: 10px;
     }
 
-    .event_date_top {
+    .event_date_place_type {
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        gap: 30px;
+        justify-content: space-between;
     }
 
-    .event_date_calendar {
+    .event_date_place {
         display: flex;
+        flex-direction: column;
         color: var(--texte);
         gap: 5px;
+    }
+
+    .event_date_time,
+    .event_place {
+        display: flex;
+        max-width: 190px;
+        gap: 7px;
         font-size: 10pt;
+        align-items: center;
+    }
+
+    .event_place img {
+        width: 20px;
+        height: auto;
+        filter: brightness(0) saturate(100%) invert(66%) sepia(61%) saturate(1650%) hue-rotate(131deg) brightness(91%) contrast(100%);
     }
 
     .event_type {
         display: inline-block;
         font-size: 10pt;
-        padding: 5px;
+        padding: 3px;
         background-color: var(--dots-color);
         border-radius: 5px;
     }
 
-    .event_date_placeholder {
-        display: flex;
-        color: var(--texte);
-        gap: 5px;
-        font-size: 10pt;
-        max-width: 240px;
-    }
-
-    .event_about{
+    .event_about {
         color: white;
         font-size: 11pt;
         text-align: justify;
+        width: 85%;
+        margin: auto;
     }
 
-    .buy_button button{
+    .buy_button button {
         margin-top: 30px;
         background-color: var(--button_color);
         font-size: 15pt;
@@ -625,6 +640,79 @@
         border: none;
         padding: 10px;
     }
+
+    .discussion h3 {
+        font-size: 16pt;
+        color: var(--texte);
+    }
+
+    .discussion_bg {
+        background-color: var(--menu_color);
+        color: var(--texte);
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    .discussion_all {
+        width: 100%;
+        display: flex;
+      
+        flex-wrap: wrap;
+    }
+
+    .discussion_profile{
+        width: 15%;
+    }
+
+    .discussion_text{
+        width: 80%;
+    }
+
+    .discussion_profile img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 100%;
+    }
+
+    .discussion_text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .disucssion_message {
+        font-size: 9pt;
+    }
+
+
+    .discussion_date_time{
+        font-size: 9pt;
+        position: absolute;
+        right: 10px;
+        bottom: 5px;
+    }
+
+    .lireplus_button button{
+        display: flex;
+        background-color: var(--button_color);
+        border-radius: 5px;
+        border: none;
+        font-size: 14pt;
+    }
+
+    .lireplus_button button a{
+        color: var(--texte);
+    }
+
+    
+
+
+
+
+
+   
 
 
 
