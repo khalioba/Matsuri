@@ -486,7 +486,8 @@
         text-transform: uppercase;
     }
 
-    .copyright, .powered{
+    .copyright,
+    .powered {
         width: 96%;
         margin: auto;
     }
@@ -602,7 +603,7 @@
     .event_date_time,
     .event_place {
         display: flex;
-        max-width: 190px;
+        max-width: 189px;
         gap: 7px;
         font-size: 10pt;
         align-items: center;
@@ -620,6 +621,15 @@
         padding: 3px;
         background-color: var(--dots-color);
         border-radius: 5px;
+    }
+
+    .event_type_premium {
+        display: inline-block;
+        font-size: 9pt;
+        padding: 3px;
+        background-color: var(--menu_hamb_close);
+        border-radius: 5px;
+        color: var(--texte);
     }
 
     .event_about {
@@ -658,15 +668,15 @@
     .discussion_all {
         width: 100%;
         display: flex;
-      
+
         flex-wrap: wrap;
     }
 
-    .discussion_profile{
+    .discussion_profile {
         width: 15%;
     }
 
-    .discussion_text{
+    .discussion_text {
         width: 80%;
     }
 
@@ -687,14 +697,14 @@
     }
 
 
-    .discussion_date_time{
+    .discussion_date_time {
         font-size: 9pt;
         position: absolute;
         right: 10px;
         bottom: 5px;
     }
 
-    .lireplus_button button{
+    .lireplus_button button {
         display: flex;
         background-color: var(--button_color);
         border-radius: 5px;
@@ -702,17 +712,17 @@
         font-size: 14pt;
     }
 
-    .lireplus_button button a{
+    .lireplus_button button a {
         color: var(--texte);
     }
 
-    
 
 
 
 
 
-   
+
+
 
 
 

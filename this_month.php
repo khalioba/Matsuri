@@ -26,7 +26,7 @@ include('include/header.php')
             <img src="image/event_portrait1.jpg" alt="">
         </div>
     </a>
-    <a href="eventfree.php">
+    <a href="eventpremium.php">
         <div class="thismonth_visual">
             <img src="image/event_portrait2.jpg" alt="">
         </div>
