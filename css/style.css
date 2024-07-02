@@ -163,7 +163,6 @@
         background-color: var(--menu_color);
         width: 100%;
         height: 60px;
-        z-index: 500;
         overflow: hidden;
         display: flex;
         align-items: center;
@@ -209,11 +208,13 @@
         left: -10px;
     }
 
+    /* menu hamburger */
     .menu_hamburger {
         display: flex;
         flex-direction: column;
         justify-content: center;
         cursor: pointer;
+        z-index: 500;
     }
 
     .menu_hamburger:first-child {
@@ -239,7 +240,7 @@
     .open .bar1,
     .open .bar2,
     .open .bar3 {
-        background-color: var(--dots-color);
+        background-color: var(--text_highlight);
     }
 
     .open .bar1 {
@@ -255,19 +256,96 @@
         transform: translateY(-200%) rotate(45deg);
     }
 
-    .menu_nav {
-        position: fixed;
-        top: 0;
-        left: -75%;
-        padding-top: 20px;
-        padding-left: 20px;
-        background-color: rgba(0, 0, 0, 0.95);
-        /* backdrop-filter: blur(4px); */
-        width: 60%;
+    .photo_profil_name_title {
+        display: flex;
+        padding: 60px 10px 20px 30px;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .photo_profil {
+        display: flex;
+        width: 65px;
+        height: 63px;
+    }
+
+    .photo_profil img {
+        width: 100%;
         height: 100%;
+        object-fit: cover;
+        border: 2px solid var(--button_color);
+        border-radius: 100%;
+    }
+
+    .profil_name_title {
         display: flex;
         flex-direction: column;
+    }
+
+    .profil_name p {
+        font-size: 14pt;
+        color: var(--texte);
+        font-weight: 700;
+    }
+
+    .profil_title p {
+        font-size: 10pt;
+        color: var(--texte);
+    }
+
+    ul#menu_nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 85%;
+        height: 100%;
+        list-style: none;
+        background-color: var(--menu_color);
+        z-index: 4;
+        padding: 0px;
         transition: transform 0.5s;
+    }
+
+    .menu_nav {
+        transform: translateX(-100%);
+    }
+
+    .rect_menu_lien {
+        background-color: var(--bg_color);
+        height: 100%;
+        padding: 15px;
+        border-top-left-radius: 60px;
+        border-top-right-radius: 60px;
+    }
+
+    .rect_menu_lien_each {
+        display: flex;
+        align-items: center;
+    }
+
+    .rect_menu_lien img {
+        width: 20px;
+        margin-right: 5px;
+    }
+
+    li.btn_nav a {
+        color: var(--texte);
+    }
+
+    .btn_nav {
+        width: 50%;
+        border-bottom: 1px dotted var(--texte);
+        padding: 15px 40px;
+        display: flex;
+        align-items: center;
+    }
+
+    nav ul li a.active {
+        color: var(--text_highlight);
+    }
+
+    nav ul li img.actived {
+        filter: brightness(0) saturate(100%) invert(65%) sepia(82%) saturate(3082%) hue-rotate(138deg) brightness(100%) contrast(101%)
     }
 
     /* slider */
@@ -312,6 +390,16 @@
 
     .swiper-pagination-bullet-active {
         background: var(--header_inscription);
+    }
+
+    swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        bottom: 13px;
+        top: var(--swiper-pagination-top, auto);
+        left: 0px;
+        width: 100%;
     }
 
 
@@ -552,6 +640,7 @@
         margin-top: 25px;
         gap: 10px;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .thismonth_visual {
@@ -869,6 +958,49 @@
     .entreprise_image img {
         width: 100%;
         height: 100%;
+    }
+
+
+
+    /* profil.php */
+    .tabs_profil_ticket {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: var(--menu_color);
+        padding: 10px;
+        position: relative;
+        width: 100%;
+    }
+
+    .tab_profil,
+    .tab_ticket {
+        color: var(--text_highlight);
+        font-size: 20px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+    }
+
+    .tab_profil {
+        left: 0;
+        top: 10px;
+        width: 45%;
+    }
+
+    .tab_ticket {
+        right: 0;
+        top: 10px;
+        width: 45%;
+    }
+
+
+    .tab_profil.active,
+    .tab_ticket.active {
+        border-bottom: 2px solid var(--text_highlight);
+        position: absolute;
+        bottom: 0;
+        width: 50%;
     }
 
 

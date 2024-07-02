@@ -31,12 +31,36 @@
                 </a>
             </div>
 
-            <ul class="menu_nav space" id="menu_nav">
-                <li class="btn_nav"><a href="index.php">Accueil</a></li>
-                <li class="btn_nav"><a href="service.php">Services</a></li>
-                <li class="btn_nav"><a href="galerie.php">Galerie</a></li>
-                <li class="btn_nav"><a href="index.php#about">A propos</a></li>
-                <li class="btn_nav"><a href="contact.php">Contact</a></li>
+            <ul class="menu_nav" id="menu_nav">
+                <div class="photo_profil_name_title">
+                    <div class="photo_profil">
+                        <img src="image/Aigle_Ny.jpg" alt="">
+                    </div>
+                    <div class="profil_name_title">
+                        <div class="profil_name">
+                            <p>Francis-ny Itoua</p>
+                        </div>
+                        <div class="profil_title">
+                            <p>Administrateur</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="rect_menu_lien">
+                    <div class="rect_menu_lien_each">
+                        <li class="btn_nav"><img src="image/home.svg" alt=""><a href="index.php">Accueil</a></li>
+                    </div>
+                    <div class="rect_menu_lien_each">
+                        <li class="btn_nav"><img src="image/home.svg" alt=""><a href="entreprise.php">Entreprise</a>
+                        </li>
+                    </div>
+                    <div class="rect_menu_lien_each">
+                        <li class="btn_nav"><img src="image/home.svg" alt=""><a href="forum.php">Forum</a></li>
+                    </div>
+                    <div class="rect_menu_lien_each">
+                        <li class="btn_nav"><img src="image/home.svg" alt=""><a href="galerie.php">Galerie</a></li>
+                    </div>
+                </div>
+
             </ul>
 
             <div class="menu_hamburger" id="hamburger">
@@ -46,3 +70,47 @@
             </div>
         </nav>
     </div>
+
+    <script>
+    hamburger.onclick = () => {
+        hamburger.classList.toggle("open");
+        menu_nav.classList.toggle("menu_nav")
+    }
+    </script>
+
+    <script>
+    // Fonction pour obtenir la page actuelle
+    function getCurrentPage() {
+        const path = window.location.pathname;
+        const page = path.split("/").pop();
+        return page.split(".")[0];
+    }
+
+    // Fonction pour définir la classe active
+    function setActiveNav() {
+        const currentPage = getCurrentPage();
+        const navLinks = document.querySelectorAll('nav ul li a');
+        const navIcons = document.querySelectorAll('nav ul li img');
+
+        navLinks.forEach(link => {
+            const linkPage = link.getAttribute('href').split(".")[0];
+            if (linkPage === currentPage) {
+                link.classList.add('active');
+                // Ajouter la classe 'actived' à l'image associée
+                const icon = link.previousElementSibling; // Sélectionner l'image associée
+                if (icon && icon.tagName === 'IMG') {
+                    icon.classList.add('actived');
+                }
+            } else {
+                link.classList.remove('active');
+                const icon = link.previousElementSibling;
+                if (icon && icon.tagName === 'IMG') {
+                    icon.classList.remove('actived');
+                }
+            }
+        });
+    }
+
+    // Appelez la fonction pour définir la classe active lors du chargement de la page
+    window.onload = setActiveNav;
+    </script>
