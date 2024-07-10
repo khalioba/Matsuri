@@ -3,7 +3,14 @@ include('include/header.php')
 ?>
 
 
-<div class="tabs_profil_ticket">
-        <a class="tab_profil active" href="profil.php">Profil</a>
-        <a class="tab_ticket" href="ticket.php">Mes tickets</a>
-</div>
+<button class="tablink" onclick="openPage('Profil', this, '3px solid #00CCD0')" id="defaultOpen">Profil</button>
+<button class="tablink" onclick="openPage('Ticket', this, '3px solid #00CCD0')" >Mes Tickets</button>
+
+
+<?php
+include('include/profil_in.php');
+?>
+
+<?php
+include('include/ticket_in.php');
+?>

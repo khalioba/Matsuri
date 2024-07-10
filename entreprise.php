@@ -8,7 +8,7 @@ include('include/header.php')
         <div class="static_slide_text">
             <h1>Entreprises</h1>
         </div>
-    </div>
+    </div>  
 </div>
 
 <div class="entreprise space_bottom space2">

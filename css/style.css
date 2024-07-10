@@ -48,6 +48,10 @@
         margin-bottom: 15px;
     }
 
+    .space_bottom2 {
+        margin-bottom: 10px;
+    }
+
     .space_top {
         margin-top: 30px;
     }
@@ -345,7 +349,7 @@
     }
 
     nav ul li img.actived {
-        filter: brightness(0) saturate(100%) invert(65%) sepia(82%) saturate(3082%) hue-rotate(138deg) brightness(100%) contrast(101%)
+        filter: brightness(0) saturate(100%) invert(65%) sepia(82%) saturate(3082%) hue-rotate(138deg) brightness(100%) contrast(101%);
     }
 
     /* slider */
@@ -713,6 +717,7 @@
     }
 
     .event_type {
+        color: black;
         display: inline-block;
         font-size: 10pt;
         padding: 3px;
@@ -788,12 +793,12 @@
     }
 
     .disucssion_message {
-        font-size: 9pt;
+        font-size: 7pt;
     }
 
 
     .discussion_date_time {
-        font-size: 9pt;
+        font-size: 7pt;
         position: absolute;
         right: 10px;
         bottom: 5px;
@@ -860,8 +865,6 @@
 
 
     /* entreprise_details */
-    .entreprise_couverture_name {}
-
     .entreprise_couverture {
         display: flex;
         justify-content: center;
@@ -961,54 +964,407 @@
     }
 
 
-
-    /* profil.php */
-    .tabs_profil_ticket {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        background-color: var(--menu_color);
-        padding: 10px;
-        position: relative;
-        width: 100%;
+    /* Prol Ticket */
+    /* Style tab links */
+    .tablink {
+        background-color: #06141B;
+        color: #00CCD0;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        font-size: 14pt;
+        width: 50%;
+        font-weight: 700;
     }
 
-    .tab_profil,
-    .tab_ticket {
-        color: var(--text_highlight);
-        font-size: 20px;
-        font-weight: 600;
+
+    /* Style the tab content (and add height:100% for full page content) */
+    .tabcontent {
+        color: white;
+        display: none;
+        height: 100%;
+    }
+
+
+    /* Profil_Ticket */
+    /* profil */
+    .couverture_profil_user {
         display: flex;
+        width: 100%;
+        margin-top: 80px;
+    }
+
+    .couverture_user {
+        width: 100%;
+        height: 160px;
+    }
+
+    .couverture_user img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: flex;
+        position: relative;
+    }
+
+    .photo_user_btnmodifier {
+        display: flex;
+        align-items: center;
+    }
+
+    .photo_user {
+        width: 125px;
+        height: 125px;
+        position: absolute;
+        left: 4%;
+        top: 267px;
+        transform: translateY(-5%);
+    }
+
+    .photo_user img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 100%;
+        border: 1px solid white;
+    }
+
+    .btn_modifier {
+        position: absolute;
+        right: 10px;
+        top: 314px;
+    }
+
+    .btn_modifier button {
+        background-color: var(--button_color);
+        font-size: 15pt;
+        font-weight: 600;
+        color: var(--texte);
+        border-radius: 2px;
+        border: none;
+    }
+
+    .profil_user_information {
+        display: flex;
+        flex-direction: column;
+        margin-top: 150px;
         justify-content: center;
     }
 
-    .tab_profil {
-        left: 0;
-        top: 10px;
-        width: 45%;
+    .profil_user_info_items {
+        width: 100%;
     }
 
-    .tab_ticket {
-        right: 0;
-        top: 10px;
-        width: 45%;
+    .information_title {
+        font-size: 15pt;
+        color: var(--text_highlight);
+        font-weight: 600;
+    }
+
+    .information_description {
+        width: 88%;
+        display: inline-block;
+        color: var(--texte);
+        font-size: 12pt;
+        background-color: var(--menu_color);
+        align-items: center;
+        padding: 10px 0px 10px 20px;
+        border-radius: 5px;
+    }
+
+    /* ticket */
+
+    .ticket_items {
+        display: flex;
+        width: 90%;
+        background-color: var(--menu_color);
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .ticket_items_left {
+        width: 176px;
+        height: 135px;
+        margin-right: 10px;
+    }
+
+    .ticket_items_left img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .ticket_name_about {
+        font-size: 8pt;
+    }
+
+    p.ticket_name {
+        color: var(--text_highlight);
+        font-size: 14pt;
+        font-weight: 700;
+    }
+
+    .ticket_date {
+        font-size: 9pt;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .ticket_date img {
+        width: 15px;
+        height: 15px;
     }
 
 
-    .tab_profil.active,
-    .tab_ticket.active {
-        border-bottom: 2px solid var(--text_highlight);
+    /* galerie */
+    .galerie_album {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .galerie_album_items {
+        width: 150px;
+        height: 200px;
+        position: relative;
+    }
+
+    .galerie_album_items img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .galerie_album_rect {
+        background-color: var(--menu_color);
+        color: white;
         position: absolute;
         bottom: 0;
-        width: 50%;
+        width: 100%;
+        height: 27px;
+        font-size: 9pt;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .galerie_view_all {
+        color: var(--texte);
+    }
+
+    .galerie_view_photo {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .galerie_view_items {
+        width: 109px;
+        height: 150px;
+    }
+
+    .galerie_view_items img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .galerie_view_vod a {
+        color: var(--texte);
+    }
+
+    .galerie_vod_items {
+        display: flex;
+        align-items: center;
+        background-color: var(--menu_color);
+        border-radius: 10px;
+        width: 98%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px;
+        position: relative;
+    }
+
+    .galerie_vod_left_photo {
+        width: 125px;
+        height: 96px;
+        margin-right: 10px;
+    }
+
+    .galerie_vod_left_photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .galerie_player {
+        position: absolute;
+        top: 42px;
+        left: 20%;
+        transform: translateX(-50%);
+    }
+
+    .galerie_player img {
+        width: 30px;
+        height: auto;
+    }
+
+    .galerie_vod_name {
+        font-size: 10pt;
+        font-weight: 700;
+    }
+
+    .galerie_vod_channel {
+        font-size: 8pt;
+    }
+
+    .galerie_vod_date_vues {
+        font-size: 8pt;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .galerie_dot {
+        width: 5px;
+        height: 5px;
+        border-radius: 100%;
+        background-color: var(--dots-color);
     }
 
 
+    /* Forum */
+    .forum_all {
+        display: flex;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 25px;
+        flex-direction: column;
+    }
 
+    .forum_items {
+        width: 96%;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        background-color: var(--menu_color);
+        padding: 5px;
+    }
 
+    .forum_left {
+        width: 250px;
+        height: 100px;
+        margin-right: 10px;
+    }
 
+    .forum_items img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        margin-right: 10px;
+        border-radius: 10px;
+    }
 
+    p.forum_title {
+        color: var(--text_highlight) !important;
+        font-size: 14pt !important;
+        font-weight: 700;
+    }
 
+    .forum_right p {
+        color: var(--texte);
+        font-size: 7pt;
+    }
+
+    .forum_total_msg {
+        position: absolute;
+        color: var(--texte);
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        right: 0;
+        border: 2px solid var(--text_highlight);
+        top: -15px;
+        padding: 5px;
+        background-color: var(--menu_color);
+    }
+
+    .forum_image {
+        width: 100%;
+        height: 250px;
+    }
+
+    .forum_image img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        border-radius: 10px;
+        object-position: center;
+    }
+
+    .forum_message_typing {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .message_container {
+        display: flex;
+        align-items: center;
+        background-color: #1b2a41;
+        border-radius: 25px;
+        padding: 10px 10px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid var(--texte);
+        /* position: relative; */
+    }
+
+    .message_container input {
+        flex: 1;
+        border: none;
+        background: none;
+        color: #ffffff;
+        font-size: 16px;
+        outline: none;
+        margin-right: 10px;
+    }
+
+    .message_container input::placeholder {
+        color: #aaaaaa;
+    }
+
+    .button_send {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        /* position: absolute;
+        right: 7px;
+        top: 11px; */
+    }
+
+    .button_send img {
+        width: 24px;
+        height: 24px;
+    }
 
 
 

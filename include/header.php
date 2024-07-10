@@ -32,32 +32,35 @@
             </div>
 
             <ul class="menu_nav" id="menu_nav">
-                <div class="photo_profil_name_title">
-                    <div class="photo_profil">
-                        <img src="image/Aigle_Ny.jpg" alt="">
-                    </div>
-                    <div class="profil_name_title">
-                        <div class="profil_name">
-                            <p>Francis-ny Itoua</p>
+                <a href="profil.php">
+                    <div class="photo_profil_name_title">
+                        <div class="photo_profil">
+                            <img src="image/Aigle_Ny.jpg" alt="">
                         </div>
-                        <div class="profil_title">
-                            <p>Administrateur</p>
+                        <div class="profil_name_title">
+                            <div class="profil_name">
+                                <p>Francis-ny Itoua</p>
+                            </div>
+                            <div class="profil_title">
+                                <p>Administrateur</p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
+
                 <div class="rect_menu_lien">
                     <div class="rect_menu_lien_each">
-                        <li class="btn_nav"><img src="image/home.svg" alt=""><a href="index.php">Accueil</a></li>
+                        <li class="btn_nav"><a href="index.php"><img src="image/home.svg" alt="">Accueil</a></li>
                     </div>
                     <div class="rect_menu_lien_each">
-                        <li class="btn_nav"><img src="image/home.svg" alt=""><a href="entreprise.php">Entreprise</a>
+                        <li class="btn_nav"><a href="entreprise.php"><img src="image/home.svg" alt="">Entreprise</a>
                         </li>
                     </div>
                     <div class="rect_menu_lien_each">
-                        <li class="btn_nav"><img src="image/home.svg" alt=""><a href="forum.php">Forum</a></li>
+                        <li class="btn_nav"><a href="forum.php"><img src="image/home.svg" alt="">Forum</a></li>
                     </div>
                     <div class="rect_menu_lien_each">
-                        <li class="btn_nav"><img src="image/home.svg" alt=""><a href="galerie.php">Galerie</a></li>
+                        <li class="btn_nav"><a href="galerie.php"><img src="image/home.svg" alt="">Galerie</a></li>
                     </div>
                 </div>
 

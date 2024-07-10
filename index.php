@@ -58,9 +58,12 @@ include('include/header.php')
         </div>
     </a>
     <div class="all_programme">
-        <div class="programme_carre">
-            <img src="image/concert_carre1.jpg" alt="Avatar">
-        </div>
+        <a href="eventfree.php">
+            <div class="programme_carre">
+                <img src="image/concert_carre1.jpg" alt="Avatar">
+            </div>
+        </a>
+
         <div class="programme_carre">
             <img src="image/concert_carre3.jpg" alt="Avatar">
         </div>
