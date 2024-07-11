@@ -116,11 +116,13 @@ include('include/header.php')
     </div>
 </div>
 
-<div class="forum_message_typing">
-    <div class="message_container">
-        <input type="text" placeholder="Message...">
-        <button class="button_send">
-            <img src="image/sent_message.svg" alt="">
-        </button>
-    </div>
-</div>
+
+<!-- <form class="forum_message_typing space2" action="forum_message.php">
+    <input type="text" placeholder="Message...">
+    <button type="submit"><img src="image/sent_message.svg" alt=""></button>
+</form> -->
+
+<form class="forum_message_typing" action="forum_message.php">
+    <input type="text" placeholder="Message..." name="search2">
+    <button type="submit"><img src="image/sent_message.svg" alt=""></button>
+</form>
