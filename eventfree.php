@@ -47,7 +47,7 @@ include('include/header.php')
 
 <center>
     <div class="buy_button space_bottom">
-        <button>Prendre un ticket</button>
+        <button id="myBtn">Prendre un ticket</button>
     </div>
 
 </center>

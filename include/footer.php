@@ -62,6 +62,8 @@
 </div>
 
 
+</div>
+
 
 
 
@@ -102,7 +104,7 @@ const swiper = new Swiper('.swiper', {
 
 });
 </script>
-
+<!-- <script src="js/pop_up.js"></script> -->
 
 
 

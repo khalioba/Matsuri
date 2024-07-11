@@ -17,11 +17,20 @@
 
     <!--  -->
     <link rel="stylesheet" href="css/style.css?<?= rand() ?>">
-    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/pop_up.css?<?= rand() ?>">
+    <script src="js/script.js?<?= rand() ?>" defer></script>
+    <script src="js/pop_up.js?<?= rand() ?>" defer></script>
     <title>Matsuri</title>
 </head>
 
 <body>
+
+    <div class="main">
+
+    <?php
+include('include/pop_up/pop_up.php')
+?>
+
     <div class="menu space_bottom">
         <nav class="nav_bar space2">
             <div class="logo_container">

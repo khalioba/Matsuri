@@ -1,4 +1,9 @@
-@media screen and (max-width: 450px) {
+/* @media screen and (max-width: 450px) { */
+
+    .main{
+        max-width: 450px;
+        margin: auto;
+    }
 
     :root {
         --bg_color: #111F2C;
@@ -1368,4 +1373,4 @@
 
 
 
-}
+/* } */
